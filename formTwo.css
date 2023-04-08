@@ -26,6 +26,29 @@ body::before {
   margin: 0 auto;
 }
 
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 80px;
+  gap: 15px;
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+li a:hover {
+ background-color: white;
+ color: #535971;
+ border-radius: 8px;
+ transition: 0.5s ease;
+}
+
 /* Header*/
 
 header {
