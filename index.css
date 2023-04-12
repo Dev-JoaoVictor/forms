@@ -220,7 +220,7 @@ fieldset legend {
   width: 2.4rem;
   height: 2.4rem;
   display: block;
-  border: 1px solid var(-bc-checkbox);
+  border: 1px solid var(--bc-checkbox);
   border-radius: 8px;
 }
 
@@ -267,7 +267,7 @@ input:invalid {
   border: 1px solid var(--input-invalid); 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 730px) {
   .page {
     width: 100%;
   }
@@ -275,6 +275,10 @@ input:invalid {
      display: none;
   }
   header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 5rem auto;
     width: max-content;
     text-align: center;
@@ -282,13 +286,15 @@ input:invalid {
   }
 
   header h1{
-    font-size: 2.4rem;
+    font-size: 2.1rem;
   }
 
   header p{
+    width: 25rem;
     font-size: 1.2rem;
   }
   #my-form {
+    width: 100%;
     padding: 5rem;
     align-items: center;
     text-align: center;
@@ -303,17 +309,23 @@ input:invalid {
   
   }
 
-
-
-
-
-
-
-  .col-3 {
-    display: none;
+  .input-wrapper select {
+    padding-right: 4rem;
   }
 
-  footer {
-    display: none;
+  .checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+   width: 100%;
   }
 }
