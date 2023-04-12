@@ -15,7 +15,7 @@
   --bg-body-secondary: #121214;
   --bg-button: #04d361;
   --bg-button-hover: #05b454;
-  --bg-foter: #f0f0f4;
+  --bg-footer: #f0f0f4;
   --bg-list: #fff;
   --bg-list-hover: #000;
   --bg-form: #fafafc;
@@ -28,7 +28,7 @@
   --input-invalid: #FF1010
 
   /* fc = Font Color */
-  --fc-header-title: #fff;
+  --fc-title: #ffffff;
   --fc-header-text: #42d3ff;
   --fc-list: #fff;
   --fc-label: #4e4958;
@@ -46,7 +46,7 @@ body {
 body::before {
   content: "";
   width: 100%;
-  height: 368px;
+  height: 36.8rem;
 
   position: absolute;
   top: 0;
@@ -58,15 +58,15 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  right: 80px;
-  gap: 15px;
+  right: 8rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
 li a{
   text-decoration: none;
   color: var(--fc-list);
-  padding: 10px;
+  padding: 1rem;
   font-weight: bold;
 }
 
@@ -80,39 +80,39 @@ li a:hover {
 
 
 .page {
-  width: 736px;
+  width: 73.6rem;
   margin: 0 auto;
 }
 
 header {
-  width: 319px;
-  margin-top: 74px;
+  width: 31.9rem;
+  margin-top: 7.4rem;
 }
 
 header h1 {
   font-family: "Archivo", sans-serif;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  color: var(--fc-header-title);
-  margin-bottom: 24px;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  color: #ffff;
+  margin-bottom: 2.4rem;
 }
 
 header p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   color: var(--fc-header-text);
 }
 
 form {
-  margin-top: 38px;
+  margin-top: 3.8rem;
   border-radius: 8px 8px 0 0;
   background: var(--bg-form);
-  min-height: 300px;
-  padding: 64px;
+  min-height: 30rem;
+  padding: 6.4rem;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 4.8rem;
 }
 
 fieldset {
@@ -122,18 +122,18 @@ fieldset {
 .fieldset-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 fieldset legend {
   font-family: "Archivo", sans-serif;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
   width: 100%;
 
   border-bottom: 1px solid var(--bc-legend);
-  padding-bottom: 16px;
+  padding-bottom: 1.6rem;
 }
 
 .input-wrapper {
@@ -143,17 +143,17 @@ fieldset legend {
 
 .input-wrapper label,
 .checkbox-wrapper label {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
   color: var(--fc-label);
   margin-bottom: 8px;
 }
 
 .input-wrapper label span {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 1.2rem;
+  line-height: 2rem;
   color: var(--fc-span);
-  margin-left: 12px;
+  margin-left: 1.2rem;
 }
 
 .input-wrapper input,
@@ -161,16 +161,16 @@ fieldset legend {
 .input-wrapper select {
   border: 1px solid var(--bc-input);
   border-radius: 8px;
-  height: 56px;
-  padding: 0 24px;
+  height: 5.6rem;
+  padding: 0 2.4rem;
   color: var(--fc-input);
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .input-wrapper textarea {
-  padding: 24px;
-  height: 168px;
+  padding: 2.4rem;
+  height: 16.8rem;
 }
 
 .input-wrapper select {
@@ -179,12 +179,12 @@ fieldset legend {
 
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
-  background-position: right 24px top 50%;
+  background-position: right 2.4rem top 50%;
 }
 
 .col-3 {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .col-3 > div:nth-child(1) {
@@ -199,8 +199,8 @@ fieldset legend {
   position: absolute;
   top: 0;
   left: 0;
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
 
   opacity: 0;
 }
@@ -212,13 +212,13 @@ fieldset legend {
   display: flex;
   align-items: center;
   margin: 0;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .checkbox-wrapper label::before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   display: block;
   border: 1px solid var(-bc-checkbox);
   border-radius: 8px;
@@ -234,9 +234,9 @@ footer {
   display: flex;
   flex-direction: column;
 
-  height: 136px;
-  padding: 40px 64px;
-  margin-bottom: 20px;
+  height: 13.6rem;
+  padding: 4rem 6.4rem;
+  margin-bottom: 2rem;
 
   background-color: var(--bg-footer);
   border-top: 1px solid var(--bc-footer);
@@ -245,14 +245,14 @@ footer {
 
 .button {
   font-family: "Archivo", sans-serif;
-  width: 608px;
-  height: 56px;
+  width: 60.8rem;
+  height: 5.6rem;
 
   border-radius: 8px;
   border: none;
 
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 600;
   color: var(--fc-button);
   background-color: var(--bg-button);
