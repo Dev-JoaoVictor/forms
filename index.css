@@ -7,8 +7,36 @@
 
 
 :root {
+  /* Unidade de medida relativa = 10px */
   font-size: 62.5%;
-  --bg-body: #e5e5e5
+
+  /* bg = background Color */
+  --bg-body: #e5e5e5;
+  --bg-body-secondary: #121214;
+  --bg-button: #04d361;
+  --bg-button-hover: #05b454;
+  --bg-foter: #f0f0f4;
+  --bg-list: #fff;
+  --bg-list-hover: #000;
+  --bg-form: #fafafc;
+
+  /* bc = Border Color */
+  --bc-legend: #e6e6f0;
+  --bc-input: #e6e6f0;
+  --bc-footer: #d6d6d6;
+  --bc-checkbox: #000;
+  --input-invalid: #FF1010
+
+  /* fc = Font Color */
+  --fc-header-title: #fff;
+  --fc-header-text: #42d3ff;
+  --fc-list: #fff;
+  --fc-label: #4e4958;
+  --fc-span: #6c6a71;
+  --fc-input: #6c6a71;
+  --fc-button: #fff;
+
+  
 }
 
 body {
@@ -24,7 +52,7 @@ body::before {
   top: 0;
   left: 0;
   z-index: -1;
-  background: #121214;
+  background: var(--bg-body-secondary);
 }
 nav ul {
   display: flex;
@@ -37,14 +65,14 @@ nav ul {
 
 li a{
   text-decoration: none;
-  color: white;
+  color: var(--fc-list);
   padding: 10px;
   font-weight: bold;
 }
 
 li a:hover {
- background-color: white;
- color: black;
+ background-color: var(--bg-list);
+ color: var(--bg-list-hover);
  border-radius: 8px;
  transition: 0.5s ease;
 }
@@ -66,20 +94,20 @@ header h1 {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  color: #ffffff;
+  color: var(--fc-header-title);
   margin-bottom: 24px;
 }
 
 header p {
   font-size: 16px;
   line-height: 26px;
-  color: #42d3ff;
+  color: var(--fc-header-text);
 }
 
 form {
   margin-top: 38px;
   border-radius: 8px 8px 0 0;
-  background: #fafafc;
+  background: var(--bg-form);
   min-height: 300px;
   padding: 64px;
   display: flex;
@@ -104,7 +132,7 @@ fieldset legend {
   line-height: 34px;
   width: 100%;
 
-  border-bottom: 1px solid #e6e6f0;
+  border-bottom: 1px solid var(--bc-legend);
   padding-bottom: 16px;
 }
 
@@ -117,25 +145,25 @@ fieldset legend {
 .checkbox-wrapper label {
   font-size: 14px;
   line-height: 24px;
-  color: #4e4958;
+  color: var(--fc-label);
   margin-bottom: 8px;
 }
 
 .input-wrapper label span {
   font-size: 12px;
   line-height: 20px;
-  color: #6c6a71;
+  color: var(--fc-span);
   margin-left: 12px;
 }
 
 .input-wrapper input,
 .input-wrapper textarea,
 .input-wrapper select {
-  border: 1px solid #e6e6f0;
+  border: 1px solid var(--bc-input);
   border-radius: 8px;
   height: 56px;
   padding: 0 24px;
-  color: #6c6a71;
+  color: var(--fc-input);
   font-size: 16px;
   line-height: 26px;
 }
@@ -178,7 +206,7 @@ fieldset legend {
 }
 
 .checkbox-wrapper input:focus + label:before {
-  outline: 2px solid black;
+  outline: 2px solid var(--bc-checkbox);
 }
 .checkbox-wrapper label {
   display: flex;
@@ -192,7 +220,7 @@ fieldset legend {
   width: 24px;
   height: 24px;
   display: block;
-  border: 1px solid black;
+  border: 1px solid var(-bc-checkbox);
   border-radius: 8px;
 }
 
@@ -210,8 +238,8 @@ footer {
   padding: 40px 64px;
   margin-bottom: 20px;
 
-  background-color: #f0f0f4;
-  border-top: 1px solid #d6d6d6;
+  background-color: var(--bg-footer);
+  border-top: 1px solid var(--bc-footer);
   border-radius: 0 0 8px 8px;
 }
 
@@ -226,17 +254,17 @@ footer {
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
-  color: white;
-  background-color: #04d361;
+  color: var(--fc-button);
+  background-color: var(--bg-button);
 }
 
 .button:hover {
-  background-color: #05b454;
+  background-color: var(--bg-button-hover);
   cursor: pointer;
 }
 
 input:invalid {
-  border: 1px solid #FF1010; 
+  border: 1px solid var(--input-invalid); 
 }
 
 @media (max-width: 425px) {
