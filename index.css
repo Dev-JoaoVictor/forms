@@ -267,6 +267,34 @@ input:invalid {
   border: 1px solid var(--input-invalid); 
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) {
+  .page {
+    width: 100%;
+  }
+  nav {
+     display: none;
+  }
+  header {
+    margin: 5rem auto;
+    width: max-content;
+    text-align: center;
 
+  }
+
+  header h1{
+    font-size: 2.4rem;
+  }
+
+  header p{
+    font-size: 1.2rem;
+  }
+
+
+  .col-3 {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
 }
