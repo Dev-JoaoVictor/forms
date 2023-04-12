@@ -56,10 +56,8 @@ body::before {
 }
 nav ul {
   display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  right: 8rem;
-  gap: 1.5rem;
+  margin-top: 5rem;
+  justify-content: center;
   list-style: none;
 }
 
@@ -68,6 +66,7 @@ li a{
   color: var(--fc-list);
   padding: 1rem;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 
 li a:hover {
@@ -271,9 +270,7 @@ input:invalid {
   .page {
     width: 100%;
   }
-  nav {
-     display: none;
-  }
+
   header {
     display: flex;
     flex-direction: column;

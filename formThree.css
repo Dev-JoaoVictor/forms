@@ -21,10 +21,8 @@ body::before {
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  right: 80px;
-  gap: 15px;
+  margin-top: 5rem;
+  justify-content: center;
   list-style: none;
 }
 
@@ -51,7 +49,7 @@ li a:hover {
 header {
   text-align: center;
   color: #fff;
-  margin-top: 107px;
+  margin-top: 30px;
 }
 
 header h1 {
@@ -60,7 +58,7 @@ header h1 {
 }
 
 header img {
-  margin: 20px 0 32px;
+  margin: 20px 0 20px;
 }
 
 form {
@@ -75,7 +73,7 @@ form {
 
 .form-title {
   background-color: #f67669;
-  height: 136.5px;
+  height: 122px;
   border-radius: 20px 20px 0px 0px;
   display: flex;
   align-items: center;

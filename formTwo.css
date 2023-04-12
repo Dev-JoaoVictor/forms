@@ -28,10 +28,8 @@ body::before {
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  right: 80px;
-  gap: 15px;
+  margin-top: 5rem;
+  justify-content: center;
   list-style: none;
 }
 
@@ -53,7 +51,7 @@ li a:hover {
 
 header {
   color: #fff;
-  margin-top: 140px;
+  margin-top: 80px;
   width: 436px;
 }
 
