@@ -5,8 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+:root {
+  font-size: 62.5%;
+  --bg-body: #e5e5e5
+}
+
 body {
-  background: #e5e5e5;
+  background: var(--bg-body);
 }
 
 body::before {
@@ -231,4 +237,8 @@ footer {
 
 input:invalid {
   border: 1px solid #FF1010; 
+}
+
+@media (max-width: 425px) {
+
 }
