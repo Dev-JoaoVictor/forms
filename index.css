@@ -288,6 +288,25 @@ input:invalid {
   header p{
     font-size: 1.2rem;
   }
+  #my-form {
+    padding: 5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .input-wrapper {
+    align-items: center;
+  }
+
+  .input-wrapper label{
+    display: grid;
+  
+  }
+
+
+
+
+
 
 
   .col-3 {
