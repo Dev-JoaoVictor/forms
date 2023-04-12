@@ -267,7 +267,7 @@ input:invalid {
   border: 1px solid var(--input-invalid); 
 }
 
-@media (min-width: 425px) {
+@media (max-width: 768px) {
   .page {
     width: 100%;
   }
