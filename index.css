@@ -325,6 +325,10 @@ input:invalid {
     align-items: center;
   }
 
+  footer {
+    margin-bottom: 0;
+  }
+
   .button {
    width: 100%;
   }
